@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Los formularios de html son muy comunes en toda pagina web -->
+    <!-- Los formulario es html son muy comunes los vamos a encontrar en toda paga web -->
+    <!-- Form de login -->
+    <!-- Form de registro -->
+    <!-- Form de contacto -->
+    <!-- Form de news -->
+    <!-- Un formulario esta compuesto por  -->
+    <!-- input (cajas de text, numero, fecha, color, email, password) -->
+    <!-- botones para poder enviar la info -->
+    <!-- select (son menus desplegables) -->
+    <!-- Todo esto esta envuelto en un formulario form ********-->
+    <!-- el form tiene atributos por ejemplo -->
+    <!-- action: es a donde se va a enviar la info (es to lo veremos en back) -->
+    <!-- method: es la forma en la informacion sera enviada (javascript) -->
+    <form action="" method="">
+        <h4>Input texto</h4>
+        <fieldset>
+        <!-- un fielset sirve como contenedor o caja de dato, pero tiene la propiedad que se le puede poner una leyenda -->
+        <legend>Información de usuario</legend>
+        <input type="text" 
+        placeholder="Ingrese su nombre" 
+        value="Victor" 
+        name="Usario"
+        maxlength="10"
+        minlength="3"
+        >
+        <!-- 5 max caracteres 3 min caracteres -->
+        
+        <h4>Input Numero</h4>
+        <input type="number"
+        placeholder="Numero"
+        name="Numero"
+        >
+        <h4>Input Fecha</h4>
+        <input type="date"
+        placeholder="Ingrese Fecha"
+        >
+        <h4>Input Fecha</h4>
+        <input type="time" placeholder="Ingrese Fecha" name="hora" id="">
+        <h4>Input File</h4>
+        <input type="file" placeholder="Ingrese un Archivo" name="" id="">
+        </fieldset>
+        <h4>Input Color</h4>
+        <input type="color" placeholder="Ingrese Color" name="" id="">
+        <h4>Input Password</h4>
+        <input type="password" placeholder="Ingrese Password" name="" id="" required>
+        <h4>Input Email</h4>
+        <input type="email" placeholder="Ingrese Email" name="" id="" required>
+        <!-- input de marcado checkbox y radio button -->
+        <h4>Radio Button</h4>
+        <!-- al poner el mismo name el formulario entiende que solo se marca una de las opciones -->
+        <input type="radio" name="opcion" id="">Rojo
+        <input type="radio" name="opcion" id="">Azul
+        <input type="radio" name="opcion" id="">Verde
+        <h4>Input checkbox</h4>
+        <!-- los checkbox permiten marcar mas de una opcion -->
+        <input type="checkbox" name="curso" id="">Matematica
+        <input type="checkbox" name="curso" id="">CSS
+        <input type="checkbox" name="curso" id="">Lenguaje
+        <input type="checkbox" name="curso" id="">Ciencia
+        <input type="checkbox" name="curso" id="">Html
+
+        <h4>Select</h4>
+        <!-- los select se componen de 2 elementos el padre select y el hijo option  -->
+        <!-- cuando yo envie la data del select va a enviar la informacion de value -->
+        <select name="cursos" id="">
+            <option value="html">Html</option>
+            <option value="css">Css</option>
+            <option value="javascript">Javascript</option>
+            <option value="rjs">React Js</option>
+        </select>
+        <select name="paises" id="">
+            <option value="peru">Perú</option>
+            <option value="colombia" selected>Colombia</option>
+            <option value="chile">Chile</option>
+            <option value="mexico">Mexico</option>
+        </select>
+        <!-- texarea -->
+        <!-- caja de texto grande -->
+        <h4>TextArea</h4>
+        <textarea placeholder="Ingresa tu solicitud" name="texto_sobre_mi" id="" cols="30" rows="10"></textarea>
+
+        <!-- Se consigue enviar informacion con ambas opciones submit puede usar button o input -->
+        <h4>Submit</h4>
+        <input type="submit" value="Enviar Datos">
+        <button type="submit"> Enviar informacion</button>
+    </form>
+    
+</body>
+</html>
