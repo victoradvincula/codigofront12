@@ -1,0 +1,109 @@
+/* es un motor de estilos potente */
+/* se acostumbra a tener un estilo global para quitarle el padding y el margin a una pagina web */
+/* padding: es el espacio interno de los elementos */
+/* margin: es el espacio externo de un elemento */
+
+/* estilos globales se activan con * para poder tener un estilo globl para mi web */
+/* se considera solo manejar margin, padding y border-box */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Ahora vamos a aplicar a una etiqueta especial */
+h1 {
+    color: #FFB500;
+    font-size: 50px;
+    font-weight: 100;
+    background-color: #78aa00;
+    /* es el color de fondo de una elemento */
+    text-align: center;
+}
+
+body{
+    color: #720062;
+    font-family: Helvetica;
+    /* los tipos de letra estan instalados en las computadoras */
+    /* font-family es el atributo que me permite cambiar el tipo de letra */
+    font-weight: bold;
+    /* sirve para poner el texto en negrita */
+    background-color: indigo;
+}
+
+section{
+    background-color: darkkhaki;
+    border: solid red 3px;  
+}
+
+/* para acceder acceder a un elemento es cascada puedo anidar las etiquetas */
+/* busca al elemento article y dentro de este debe estar el p y a ese p pon color azul */
+section article{
+    color: blue;
+    font-weight: 50;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav{
+    text-align: center;
+    border: 5px solid royalblue;
+}
+
+li{
+    color: green;
+}
+
+ul{
+    background-color: #ddd;
+    border: 5px solid red;
+}
+
+ul li{
+    /* le quita las viñetas a mi li */
+    list-style: none;
+    /* es la propieda en la que se puede mostrar un  */
+    display: inline;
+}
+
+a{
+    color: green;
+    /* text-decoratio es una propiedad para asignar distintos estilos a un texto */
+    /* cuando ustedes vean none en una propiedad significa que se ha deshabilitado */
+    text-decoration: none;
+}
+/* este div contiene mi foto */
+div{
+    border: 5px solid#000;
+    text-align: center;
+}
+img{
+    /* width y height son para manejar el ancho y altura */
+    width: 50%;
+    height: 500px;
+}
+
+/* ID para poder acceder a un id que esta en HTML usamos # + el nombre que se le asigno */
+
+#title{
+    color: hotpink;
+}
+
+#text__paragraph{
+    text-align:right ;
+}
+
+/* con los ID tenemos un tema */
+/* solo deberian afectar a un elemento */
+
+/* para poder repetir identificadores de elementos se recomienda clases */
+/* para poder acceder a una clase usamos el "." */
+
+.text1{
+    color: indianred;
+}
+
+.logo{
+    width: 300px;
+    height: 100px;
+    border: 5px solid rosybrown;
+}

@@ -1,0 +1,67 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Oufit", sans-serif;
+}
+
+#contenedor{
+    background-color: hsl(216, 50%, 16%);
+    width: 37%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#img_principal{
+    border-radius: 5px;
+}
+
+h4{
+    color: #fff;
+}
+
+.txt_principal{
+    color: hsl(215, 51%, 70%);
+    font-weight: 200;
+    font-size: 12px;
+    text-align: left;
+}
+
+span{
+    font-size: 12px;
+}
+
+.contenedor_secundario{
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moneda{
+    color: hsl(178, 100%, 50%);
+    
+}
+
+.dia{
+    color: hsl(215, 51%, 70%);
+}
+
+.linea{
+    height: 0.5px;
+    border: none;
+    background-color: hsl(215, 51%, 70%);
+}
+
+.img_avatar{
+    border: solid 1px #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text_strong{
+    color: #fff;
+}
+
+.contenedor_final{
+    display: flex;
+}
