@@ -13,6 +13,8 @@
             <li><a href="./dia3.html">Semantica</a></li>
             <li><a href="./dia3-lista.html">Listas</a></li>
             <li><a href="./dia3multimedia.html">Multimedia</a></li>
+            <!-- se puede usar # y id de un elemento para fijar una ancla interna -->
+            <li><a href="#video_youtube">Video Youtube</a></li>
         </ul>
     </nav>
 </header>
@@ -33,6 +35,7 @@
     <a href="https://codigo.edu.pe/" target="_blank" > Registrarse en codigo </a>
     </p>
     <p>
+        <!-- img es una elemento vacio, no posee contenido   -->
     <img src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/03/db9960b2dec9108169f86290953e15caef59dc62_s2_n1-scaled.jpeg?fit=1200%2C604&ssl=1" alt="spiderman"
         width="400"
     >
@@ -48,7 +51,7 @@
             >   
         </a>
     </p>
-    <p>
+    <p id="video_youtube">
         <a href="https://www.youtube.com/watch?v=PAkYdSGHgBk">
             <img src="https://es.web.img3.acsta.net/pictures/18/09/18/16/30/4389164.jpg"
             width="500"
@@ -92,8 +95,54 @@
             <button class="button button2" type="button" onclick="alert('hOLA peru¡')">Blue</button>
     </div>
 
+    <!-- la etiqueta main define el contenido principal de la pagina -->
+    <main>
+        <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+        <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+    </main>
+
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
 
 
 
 </body>
 </html>
+<img src="" alt="">
+<a href=""></a>
+<br>
+<a href=""></a>
+<p></p>
+
+<input type="text" name="" id="" placeholder="">
+<form action=""></form>
+
+<button type="submit">Submit</button>
+
+<form action="">
+    <!-- lista de seleccion de opcion unica -->
+    <H2>Selecciona tu color favorito</H2>
+<label for="1">Blanco<input type="radio" name="colores" id="1"></label><br>
+<label for="2">Azul<input type="radio" name="colores" id="2"></label><br>
+<label for="3">Verde<input type="radio" name="colores" id="3"></label><br>
+<label for="4">Rojo<input type="radio" name="colores" id="4"></label><br>
+</form>
+
+<form action="">
+    <!-- liste de seleccion multiple --> 
+    <!-- agregar value a cada option y checkbox como buena practica / por default el sistema pone value=on -->
+    <h2>Seleccion tus deportes favoritos</h2>
+<label for="1">Futbol<input type="checkbox" name="deportes" id="1" value="fultbol"></label><br>
+<label for="2">Tennis<input type="checkbox" name="deportes" id="2" value="tennis"></label><br>
+<label for="3">Golf<input type="checkbox" name="deportes" id="3" value="golf"></label><br>
+<label for="4">Surf<input type="checkbox" name="deportes" id="4" value="surf"></label><br>
+
+</form>

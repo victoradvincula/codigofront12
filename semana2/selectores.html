@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/dk-pardesi" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* GLOBALES */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* SELECTOR DE ETIQUETA */
+        header{
+            background-color: orchid;
+            padding:20px;
+            border:10px solid blue;
+        }
+        /* SELECTO DESCENDIENTE */
+        header a{
+            color:orange;
+        }
+        header ul{
+            list-style: none;
+            font-family: "DK Pardesi";
+            font: size 30px;
+            color:black;
+        }
+
+        header ul li a{
+            color:black;
+        }
+        /* SELECTORES CON CLASES */
+
+        header .logo{
+            font-size:50px;
+        }
+
+
+        main a{
+            color: yellowgreen;
+        }
+        main .section a{
+            color: brown;
+        }
+
+    </style>
+
+
+    <header>
+        <a class="logo" href="">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="">Quienes Somos</a></li>
+                <li><a href="">Portafolio</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <a href="">Links</a>
+            <a href="">Links</a>
+        </aside>
+        <section class="section">
+            <a href="">Enlace de seccion</a>
+        </section>
+    </main>
+</body>
+</html>

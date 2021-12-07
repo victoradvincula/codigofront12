@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .flex{
+            display: flex;
+            background-color:pink;
+            justify-content:flex-start;
+            font-size:50px;
+        }
+        .flex div:nth-child(even){
+            background-color:red
+        }
+
+        .flex div:nth-child(odd){
+            background-color:green
+        }
+        .flex-end{
+            justify-content:flex-end;
+        }
+        .center{
+            justify-content:center;
+        }
+        .space-between{
+            justify-content:space-between;
+        }
+        .space-around{
+            justify-content:space-around;
+        }
+        /* Justify Content */
+        /* center: alinea los elementos al centro */
+        /* flex-start: al inicio */
+        /* flex-end: al final */
+        /* space-between:espacio entre ellos */
+        /* space-around:espacio entre ellos pero con una distancia entre ellos */
+    </style>
+    <h2>Flex start</h2>
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h2>Flex-End</h2>
+    <div class="flex flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h2>Center</h2>
+    <div class="flex center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h2>Space between</h2>
+    <div class="flex space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h2>Space Arpund</h2>
+    <div class="flex space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

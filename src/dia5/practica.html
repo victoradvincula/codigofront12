@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/dk-pardesi" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+    <title>Document</title>
+
+
+<style>
+
+.titulo{
+    font-family: 'American Typewriter', sans-serif;
+    /* fuente titulas y secundaria*/
+    font-weight: 700;
+    /* grosor de letra */
+    font-size: 50px;
+    /* tamaño */
+    color: #ffb500;
+}
+
+p{
+    font-family: 'DK Pardesi',Helvetica;
+}
+
+li{
+    font-family: 'American Typewriter', sans-serif;
+}
+
+.tamaño{
+    width: 300px;
+    /* largo */
+}
+.borde{
+    border-color: green;
+    border-width: 5px;
+    /* ancho del borde */
+    border-style: solid; 
+    /* añade borde al elemento */
+    border-radius: 10px;
+    /* radio del borde */
+}
+
+.fondo{
+    background-color: silver;
+    /* coloar de fondor del elemento */
+}
+
+#formulario{
+    background-color: yellowgreen;
+}
+
+/* padding establece el espacio de relleno requerido por todos los lados de un elemento. */
+/* (padding-top, padding-right, padding-bottom, padding-left). */
+
+
+</style>
+
+<!--  -->
+</head>
+<body>
+    <h2 class="titulo">CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="tamaño borde" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+<!-- un elemento puede tener mas de una clase / se tiene que se para por espacio -->
+  
+<div class="fondo">
+<p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+  <form id="formulario" action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+    <label for="loving"><input checked id="loving" type="checkbox" name="personality" value="loving"> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+  <!-- es un elemento de Html que no tiene contenido por eso se le conocen como vacios  -->
+</main>
+</body>
+</html> 
