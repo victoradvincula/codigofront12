@@ -81,6 +81,7 @@ a{
 .section2{
     display: flex;
     margin: 40px;
+    flex-wrap: wrap;
 }
 
 .section2 article{
