@@ -1,17 +1,22 @@
 .wrap{
     width: 1440px;
     margin:auto;
+    
 }
 body{
     font-size: 16px;
     font-family: roboto;
     font-weight: 400;
     line-height: 32px;
+
+    
 }
+
 main{
     margin: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 h2{
     font-size:28px;
@@ -19,12 +24,22 @@ h2{
     color: #87119A;
     padding-left:15px;
     border-left: 8px solid #87119A;
+    margin-bottom: 15px;
+}
+p{
+    text-align: justify;
 }
 a{
     text-decoration:none;
 }
 li{
     font-size:24px;
+}
+span{
+    font-weight: bold;
+}
+img{
+    border-radius:20px;
 }
 /* header */
 .header {
@@ -78,9 +93,45 @@ li{
 .main .servicios .div1-servicios{
     display: flex;
     justify-content: center;
-    margin-top:20px;
+    margin-top:40px;
     margin-bottom: 40px; 
 }
 .main .servicios .div1-servicios figure{
     margin-right: 20px;
+}
+
+.main .portafolio .div2-portafolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding:20px;
+}
+.main .portafolio .div2-portafolio figure img {
+    width: 282px;  
+    height: 251px;
+    margin-right: 40px;
+    margin-bottom: 40px
+}
+
+.main .contacto .div3-contacto{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+.main .contacto .div3-contacto div{
+    margin-right: 40px;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 77px;
+    background-color: #9ECEFA;
+    display: flex;
+    justify-content:space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.footer .firma{
+    color:#87119A
 }
