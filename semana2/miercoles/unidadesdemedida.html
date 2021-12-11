@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html{
+            font-size:62.5%;
+            /* BASE 10 */
+            /* ES UNA BUENA PRACTICA */
+        }
+
+        body {
+            font-family:arial;
+
+        }
+        h1 {
+            font-size: 2rem;
+            width: 200px;
+            height: 40px;
+            padding: 20px;
+            margin: 20px;
+
+        }
+    </style>
+    <h1>
+        titulo principal
+    </h1>
+    <style>
+        h2{
+            font-size:20px;
+        }
+
+        /* la mitas del padre del*/
+        h2 small{
+            font-size: 0.5em;
+        }
+
+
+    </style>
+
+        <h2>
+            subtitulo
+            <small> aca el texto mas pequeño</small>
+        </h2>
+
+    <style>
+        /* rem toma como unidad de medida relativa del html el navegador tiene como tamaño definido 16px*/
+        p{
+            font-size:1.5rem;
+
+        }
+    </style>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est animi architecto, esse nostrum ab laborum commodi delectus, repudiandae nihil quidem, deleniti iste! Cupiditate sed, aliquid vel, ab officiis nobis culpa quaerat, repellat deleniti temporibus unde qui maxime recusandae ex dicta minima similique et hic? Pariatur nam neque aut commodi explicabo?</p>
+
+    <style>
+        /* medida porcentaje se debe usar para las cajas contenedoras*/
+        .container {
+            /* se define el ancho maximo de la pantalla */
+            max-width: 960px;
+            /* centra las cajas  */
+            margin: auto;
+            background-color:red;
+            height:200px;
+            display: flex;
+            justify-content:space-between;
+
+        }
+
+        div .caja-verde{
+            background-color:green;
+            width: 50%;
+           
+        }
+
+        div .caja-azul{
+            background-color: blue;
+            width: 50%;
+        }
+
+    </style>
+
+    <div class="container">
+
+
+        <div class="caja-verde">
+            caja verde
+        </div>
+        <div class="caja-azul">
+            caja azul
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

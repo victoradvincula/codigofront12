@@ -1,0 +1,86 @@
+.wrap{
+    width: 1440px;
+    margin:auto;
+}
+body{
+    font-size: 16px;
+    font-family: roboto;
+    font-weight: 400;
+    line-height: 32px;
+}
+main{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size:28px;
+    font-weight: 700;
+    color: #87119A;
+    padding-left:15px;
+    border-left: 8px solid #87119A;
+}
+a{
+    text-decoration:none;
+}
+li{
+    font-size:24px;
+}
+/* header */
+.header {
+    width:1440px;
+    height:118px;
+    background-color: #9ECEFA;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.header .logo {
+    width:139px;
+    height:69px;
+    margin-left:40px;
+    font-family: 'Fascinate', cursive;
+    font-size: 52px;
+    text-decoration: none;
+    color:#87119A;
+    display: flex;
+    align-items: center;
+}
+.header nav ul{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.header nav li{
+    margin:0 15px;
+    font-weight: bold;
+}
+.header nav li a{
+   color:grey;
+}
+.header nav li a:hover{
+    color:#87119A;
+    text-decoration:underline;
+}
+/* main */
+
+.main .nosotros .div-nosotros{
+    display: flex;
+    margin-top:20px;
+    margin-bottom: 40px; 
+}
+.main .nosotros .imagen{
+    width: 410px;
+    height: 251px;
+    margin-right: 10px;
+}
+
+.main .servicios .div1-servicios{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom: 40px; 
+}
+.main .servicios .div1-servicios figure{
+    margin-right: 20px;
+}

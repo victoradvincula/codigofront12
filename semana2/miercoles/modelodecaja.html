@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        a{
+            display:block;
+            text-align: center;
+            display:
+        }
+
+        span{
+            visibility:hidden;
+            background-color: aqua;
+        }
+
+        h2{
+            border-style: dotted;
+            border-width: 6px;
+            border-color: brown;
+            /* se puede sintetizar las propiedades en una linea */
+            border: 20px dotted orange;
+        }
+        body .margen{
+            background-color:red;
+            width: 100px;
+            height: 100px;
+            /* si al bloque no se le define height no se muestra a excepcion que tenga contenido */
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            /* cuando se poner el margen en una sola linea funciona de acuerdo al sentido horario top,right,bottom,left */
+            margin: 10px 10px 10px 10px;
+        }
+
+        body .padding{
+            background-color:yellow;
+            margin: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            /* cuando se poner el padding en una sola linea funciona de acuerdo al sentido horario top,right,bottom,left */
+            padding: 10px 20px 5px 40px;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .box{
+            /* se debe aplicar a todos los elementos box-sizing:border-box */
+
+            width: 100%;
+            height: 200px;
+            background-color:orange;
+            padding: 20px;
+            /* con esta propiedad el padding no se suma al width */
+            box-sizing: border-box;
+        }
+
+        .box-view{
+            width: 400px;
+            height: 200px;
+            background-color:pink;
+            /* el contenido que excede lo ajustar al a altura de la caja */
+            overflow: auto;
+
+            /* se esconde el scroll y genera overflow en el eje y
+            overflow:hidden;
+            overflow-x:auto;
+
+            */
+        }
+
+
+        .background{
+            width:400px;
+            height:200px;
+            background-color:green;
+            background-image: url(https://media.prod.mdn.mozit.cloud/attachments/2015/12/02/11983/4e58af0c4274c982a2485fba43a06917/starsolid.gif) ;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .outline{
+            width: 200px;
+            height: 200px;
+            outline: 1px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- elemento bloque -->
+    <header>Header</header>
+    <!-- elemento inline -->
+    <!-- CON LA PROPIEDAD DISPLAY PUEDO CONVERTIR UN ELEMENTO INLINE A UN ELEMENTO BLOQUE -->
+    <!-- diplay:block convierte en bloque un elemento // puedo usar margin, usar todo el ancho de la caja -->
+    <!-- display:inline convierte a inline un elemento -->
+    <!-- diaplay:none esconde el elemento -->
+    <!-- visibility:hidden; esconde elementos pero siguen ocupando su espacio-->
+    <!-- display:inline-block representa correctamente espacios -->
+    <a href="">Enlace</a>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium corporis ea laboriosam soluta aliquam voluptatem ducimus ut iste quidem asperiores molestiae, quia blanditiis et fuga maxime nihil eius impedit delectus! Ad illo hic eveniet vero corrupti quisquam. Nesciunt assumenda et minima nulla. Earum cumque iure quod recusandae eius ducimus! Neque, reprehenderit velit voluptate tempore vero adipisci commodi similique quaerat ullam, ratione suscipit! Suscipit dolor nisi similique corrupti aliquid autem quia ex, commodi ipsum cupiditate repellat recusandae culpa, aperiam ut eius officia, alias iste vel quibusdam. Alias aspernatur ipsa minus corporis nulla, quae magnam doloremque reprehenderit. Eveniet amet distinctio tenetur reprehenderit ducimus, blanditiis id placeat eligendi labore. Voluptates laudantium iste ipsum harum consequatur, perspiciatis accusantium odio iure, exercitationem, fuga enim. Temporibus, expedita veritatis error maiores, odio excepturi a, quisquam aliquid quos et itaque amet accusamus sint alias voluptatibus hic! Tenetur quibusdam fuga expedita vel omnis explicabo accusamus? Voluptatum consectetur, facere aliquid, et numquam voluptatem perferendis tempora minus error incidunt totam accusamus adipisci iure reiciendis rem aut deleniti, dolores nobis quos placeat nihil. Illo iure, nihil deserunt officia doloribus repellendus. Odit magnam molestiae possimus, nam nisi repellendus impedit perspiciatis, dolorum similique eos voluptatem omnis corrupti earum ratione aperiam! Quisquam ullam culpa nihil fuga? Deserunt doloribus, laboriosam maiores numquam ab voluptatem. Alias vel provident explicabo nam, rerum velit voluptates quidem iusto, voluptatem maiores ullam inventore voluptatibus laudantium, autem voluptate recusandae facere dolorem temporibus est quae doloribus sint illum! Provident, dignissimos. Non nam quaerat alias, quidem cum voluptate ad laudantium corrupti aut nulla labore delectus vero tempore minima consequatur maiores? Nesciunt, pariatur mollitia illum, optio veritatis sed in voluptates repellat eius doloribus a eligendi reprehenderit eos, praesentium perspiciatis. Eaque, facere exercitationem cum earum voluptatum saepe est vitae, iste voluptas sed ipsum quia alias quos ipsam dolorem distinctio magnam quas eum expedita, natus nobis quam quibusdam. Fugiat voluptate doloremque esse vel labore, aliquid officiis. Molestias fugiat rem ut vitae officiis harum, ipsa, maiores quos obcaecati id reiciendis facilis veritatis veniam ipsum quas nam placeat molestiae voluptas voluptatibus est facere neque rerum vero. Amet recusandae ab similique, magni accusantium, animi quas nisi praesentium vitae corrupti deserunt doloribus consequuntur aperiam temporibus ratione, incidunt fugit eligendi voluptatibus aut. Accusantium consequatur quo ducimus magnam nam ab ex, eveniet facere sit tempora ratione earum? Sint cum odio nostrum autem, eaque odit excepturi cupiditate. Voluptas ducimus quos officiis consequatur deleniti aspernatur commodi, harum ut, debitis provident quibusdam dolore suscipit vero enim temporibus? Quis ratione dolorum inventore unde aliquam, vero non delectus debitis harum libero itaque velit quas, impedit eius labore quia illum alias rerum ut, neque necessitatibus ducimus quod. Minus assumenda rerum commodi. At suscipit deserunt, quos aut, perferendis placeat molestias explicabo eius laudantium excepturi sunt corrupti cupiditate, commodi voluptas non sapiente aliquid. Quis fuga consequuntur eos harum inventore amet debitis aspernatur perferendis id quidem quasi maiores natus pariatur labore accusamus distinctio ad ratione qui omnis minima vitae sequi, nihil mollitia sit. Dignissimos incidunt ratione quasi vel voluptate deleniti, doloribus odit maxime a quos repudiandae eum provident deserunt, vero quisquam eaque!</p>
+    </div>
+
+
+    <h1>H1</h1>
+    <span>Span</span>
+    <h2>h2</h2>
+
+    <h3>MARGENES</h2>
+    <div class="margen">
+        
+    </div>
+    <div class="margen">
+
+    </div>
+
+    <h3>PADDING</h3>
+    <div class="padding">
+        PADDING
+    </div>
+    <div class="padding">
+        PADDING
+    </div>
+
+    <div class="box">
+        BOX SIZING
+    </div>
+
+        <h3>OVERFLOW</h3>
+    <div class="box-view">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dignissimos provident fuga sunt quia corporis architecto maiores quibusdam nihil dolore distinctio expedita itaque ab animi quis sint, quae in nisi.
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis exercitationem minima cupiditate. Vero ab porro a ipsa enim iure eum labore accusamus nam eaque. Soluta repellat ipsum molestiae ipsa consequuntur architecto dolorum libero, ut eveniet suscipit perferendis minus dolore provident nesciunt aut eius natus corrupti. Nesciunt tempore rerum veritatis eius atque nobis, porro provident quia expedita aut quo dolorum neque esse exercitationem deserunt ab animi. Reprehenderit obcaecati ex odit quos unde perspiciatis alias et sequi accusantium incidunt similique quia, enim hic expedita voluptatum eveniet nihil quae magni consectetur? Labore, eveniet. Nulla nisi officiis commodi rerum accusantium atque dicta quam asperiores?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis exercitationem minima cupiditate. Vero ab porro a ipsa enim iure eum labore accusamus nam eaque. Soluta repellat ipsum molestiae ipsa consequuntur architecto dolorum libero, ut eveniet suscipit perferendis minus dolore provident nesciunt aut eius natus corrupti. Nesciunt tempore rerum veritatis eius atque nobis, porro provident quia expedita aut quo dolorum neque esse exercitationem deserunt ab animi. Reprehenderit obcaecati ex odit quos unde perspiciatis alias et sequi accusantium incidunt similique quia, enim hic expedita voluptatum eveniet nihil quae magni consectetur? Labore, eveniet. Nulla nisi officiis commodi rerum accusantium atque dicta quam asperiores?</p>
+
+    </div>
+
+    <h3>BACKGROUND</h3>
+
+    <div class="background">
+    </div>
+
+    <h3>OUTLINE</h3>
+    <!-- ES COMO UN BORDE PERO NO OCUPA ESPACIO -->
+
+    <div class="outline">
+        outline
+    </div>
+
+
+</body>
+</html>

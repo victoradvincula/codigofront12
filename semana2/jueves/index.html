@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color:orange;
+            top: 50px;
+            position: relative;
+            /* con POSICION relative defino el espacio por el cual se van a desplazar los elementos */
+        }
+        .ojo1,
+        .ojo2{
+            width: 30px;
+            height: 30px;
+            background-color:red;
+        }
+        .ojo1{
+            position: absolute;
+            right: 25%;
+            Top: 40px;
+            /* cuando uso POSITION OBSOLUTE puedo desplazar al elemento para cualquier posicion dentro del vieport */
+            /* buscan la posicion relativa mas cercana */
+        }
+        .ojo2{
+            position: absolute;
+            left:25%;
+            top: 40px;
+            
+        }
+        .boca{
+            width: 80px;
+            height: 30px;
+            background-color:red;
+            position:absolute;
+            bottom: 20%;
+            left: 50%;
+            margin-left: -40px;
+            /* se puede centrar el elemento de esta manera */
+        }
+        .diente{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color:white;
+        }
+
+        .diente:nth-last-child(1){
+            left:15px;
+        }
+        .diente:nth-last-child(2){
+            left: 30px;
+        }
+        .diente:nth-last-child(3){
+            left: 45px;
+        }
+        .diente:nth-last-child(4){
+            left: 60px;
+            z-index: 2;
+        }
+        .adorno{
+            position: absolute;
+            background-color:grey;
+            width:80%;
+            height: 10px;
+            z-index: 1;
+            /* z-index permite controlar el posicionamiento de las capas siempre que el numero sea mayor a la capa previa */
+            left:10%;
+            top: 6px;
+
+        }
+        body{
+            margin: 0;
+            height: 200vh;
+        }
+        .header{
+            background-color:red;
+            height:50px;
+            width: 100%;
+            position:fixed;
+            top: 0;
+            z-index: 3;
+        }
+        /* cabecera persistente */
+        /* solo utilizar position para piezas eu flotan encima de otros elementos */
+
+    </style>
+
+<body>
+    <div class="box">
+        <div class="ojo1">
+
+        </div>
+        <div class="ojo2">
+        </div>
+        <div class="boca">
+            <div class="diente"></div>
+            <div class="diente"></div>
+            <div class="diente"></div>
+            <div class="diente"></div>
+            <div class="adorno"></div>
+        </div>
+    </div>
+
+    <header class="header"> 
+        CABECERA
+    </header>
+
+</body>
+</html>
