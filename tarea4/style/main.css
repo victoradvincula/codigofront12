@@ -429,13 +429,13 @@ main{
 }
 
 .section5 .form-contact input:hover{
-    border: 1px solid #6D0AD3;
+    border: 2px solid #6D0AD3;
 }
 .section5 .form-contact select:hover{
-    border: 1px solid #6D0AD3;
+    border: 2px solid #6D0AD3;
 }
 .section5 .form-contact textarea:hover{
-    border: 1px solid #6D0AD3;
+    border: 2px solid #6D0AD3;
 }
 
 /* FOOTER */
