@@ -30,7 +30,7 @@ p{
 }
 
 body{
-    width: 85%;
+    width: 78%;
     margin: auto;
 }
 .wrapper{
@@ -38,6 +38,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+main{
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
 }
 
 /* header */
@@ -177,10 +183,10 @@ body{
 }
 
 .section1 .div5 figure{
-    width: 60%;
+    width: 50%;
 }
 .section1 .div5 .icono-like{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: flex-start;
     align-items:center;
@@ -189,9 +195,330 @@ body{
 /* SECTION 2 */
 
 .section2 .div6{
+    width: 80%;
+    margin: auto;
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    grid-gap: 20px;
     padding-top: 20px;
     padding-bottom: 40px;
+}
+.section2 .portafolio-hover{
+    background: rgba(109, 10, 211, 0.8);
+    width: 190px;
+    height: 174px;
+    border-radius: 8px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
+.section2 h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+}
+.section2 p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;line-height: 19.5px;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.section2 .app-hover{
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.section2 span{
+    width:54px;
+    height: 20px;
+    background-color:#D1FFA2;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 24px;
+    color:#580AAF;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.section2 .figure-portafolio{
+    position: relative;
+}
+.section2 .figure-portafolio:hover .portafolio-hover{
+    display:block;
+}
+/* SECTION3 SERVICES */
+
+.section3 .services{
+    padding-top: 25px;
+    padding-bottom:25px;
+    width: 650px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 15px;
+}
+
+.section3 .div-services{
+    background-color:#00CF95;
+    width: 308px;
+    height: 218px;
+    margin: 5px;
+    border: 5px solid #D1FFA2;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.section3 h6{
+    width: 224px;
+    height: 48px;
+    background-color: #D1FFA2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color:#5A0CB0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+}
+
+.section3 img{
+    position: absolute;
+    top: 15px;
+    left: 15px
+}
+
+.section3 .div-services:hover{
+    border: 4px solid #5A0CB0;
+
+}
+.section3 .div-services:hover h6{
+    background-color: #5A0CB0;
+    color: white;  
+}
+
+/* SECTION4 BLOG */
+
+.section4 .div7{
+    width: 80%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr 1fr;
+    grid-template-rows:repeat(auto-fit, 1fr);
+    grid-gap: 15px;
+}
+.section4 h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    border-left: 4px solid #C4C4C4 ;
+    padding-left: 10px;
+}
+.section4 p{
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 11px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+#titulo{
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    border-left: 4px solid #580AAF ;
+}
+#parrafo{
+    font-weight:400;
+    font-size: 18px;
+    line-height: 27px;
+}
+#form{
+    display: flex;
+}
+
+#email{
+    padding: 10px;
+    border: 1px solid #C0C0C0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#submit{
+    padding: 10px 20px 10px 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #6D0AD3;
+    border: 1px solid #6D0AD3;
+    color: white;
+}
+/* SECTION5 CONTACT */
+.section5 .form-contact{
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 15px;
+    
+
+}
+.section5 .form-contact input{
+    width: 308px;
+    height: 57px; 
+    border-radius: 8px;   
+    border: 1px solid #C0C0C0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.section5 .form-contact select{
+    width: 308px;
+    height: 57px;  
+    border-radius: 8px;  
+    border: 1px solid #C0C0C0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.section5 .form-contact textarea{
+    width: 636px;
+    height: 150px; 
+    border-radius: 8px;  
+    border: 1px solid #C0C0C0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+#enviar{
+    width: 144px;
+    height: 57px;
+    margin: auto;
+    border-radius: 8px;
+    background-color:#6D0AD3;
+    color: white;
+    font-size: 16px;
+}
+
+.section5 .form-contact input:hover{
+    border: 1px solid #6D0AD3;
+}
+.section5 .form-contact select:hover{
+    border: 1px solid #6D0AD3;
+}
+.section5 .form-contact textarea:hover{
+    border: 1px solid #6D0AD3;
+}
+
+/* FOOTER */
+
+.footer{
+    border-top: 1px solid #00CF95;
+    ;
+}
+
+.footer .div-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top:30px;
+    padding-bottom:20px;
+}
+
+.footer .redes{
+    display: flex;
+    gap: 10px;
+}
+
+.footer h6{
+    width:335px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height:35px;
+    font-family: 'Raleway', sans-serif;
+    color: #00CF95;
+    text-align: center;
+    position: relative;
+    left: 75px;
+}
+
+.footer .logo-contenedor{
+    position: relative;
+    top: -30px;
+}
+.footer .tri-4{
+    position: absolute;
+    z-index: 1;
+
+}
+.footer .tri-3{
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+}
+.footer .tri-2{
+    position: absolute;
+    z-index: 3;
+    left: 10px;
+}
+.footer .tri-1{
+    position: absolute;
+    z-index: 4;
+    left: 15px;
+}
+.footer .logo{
+    position: absolute;
+    z-index: 5;
+    left: 30px;
+    top: 15px;
+}
+.footer .nav-ul{
+    display: flex;
+    gap:15px;
+    justify-content: center;
+}
+
+.footer li:hover{
+    border-bottom: solid 3px #6D0AD3;
+    border-radius: 3px;
+}
+
+.footer .nav-ul a:hover{
+    color: #6D0AD3;
+    font-weight: bold;
+}
+
+
+.footer .pie-pagina{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
