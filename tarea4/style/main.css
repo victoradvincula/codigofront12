@@ -61,6 +61,10 @@ main{
     align-items:flex-end;
     gap: 15px;
 }
+
+.header ul li{
+    border-bottom: 3px solid white;
+}
 .header ul li a{
     padding: 5px;
 }
@@ -71,7 +75,6 @@ main{
 }
 .header li a:hover{
     color: #6D0AD3;
-    font-weight: bold;
 }
 
 .header .logo-contenedor{
@@ -195,7 +198,7 @@ main{
 /* SECTION 2 */
 
 .section2 .div6{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
@@ -320,7 +323,7 @@ main{
 /* SECTION4 BLOG */
 
 .section4 .div7{
-    width: 80%;
+    width: 100%;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr .5fr .5fr 1fr;
@@ -376,7 +379,7 @@ main{
 /* SECTION5 CONTACT */
 .section5 .form-contact{
     padding: 20px;
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;

@@ -1,0 +1,57 @@
+body {
+  color: blue;
+  font-family: verdana;
+}
+
+a {
+  color: blue;
+  font-family: sans-serif;
+}
+
+ul li {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: verdana;
+}
+
+/* NESTING */
+.body a {
+  font-family: sans-serif;
+}
+.body ul {
+  color: blue;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.body li {
+  border-left: 1px solid blue;
+}
+.body li:hover {
+  background-color: red;
+  border-bottom: 1px solid red;
+}
+.body li.is-active {
+  background-color: blue;
+}
+.body h6 {
+  color: red;
+  font-family: verdana;
+}
+.body-black {
+  background-color: black;
+}

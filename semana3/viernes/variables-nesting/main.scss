@@ -1,0 +1,65 @@
+
+$color-primary:blue;
+$color-secondary:red;
+$fontfamily-primary: sans-serif;
+$fontfamily-title: verdana;
+
+body{
+    color: $color-primary;
+    font-family: $fontfamily-title;
+     
+}
+
+a{
+    color: $color-primary;
+    font-family: $fontfamily-primary;
+}
+
+ul li{
+    font-family: $fontfamily-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fontfamily-title
+}
+
+/* NESTING */
+// NESTING
+.body{
+    a{
+        font-family: $fontfamily-primary;
+    }
+
+    ul{
+        color: $color-primary;
+        font-family: $fontfamily-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li{
+        border-left:  1px solid $color-primary;
+        &:hover{
+            background-color: $color-secondary;
+            border-bottom:  1px solid $color-secondary;
+        }
+
+        &.is-active{
+            background-color: $color-primary;
+        }
+    }
+
+    h6{
+        color: $color-secondary;
+        font-family: $fontfamily-title;
+    }
+    &-black{
+        background-color: black;
+    }
+}

@@ -1,0 +1,27 @@
+/* HEADER*/
+$header-padding:20px;
+$header-logo-size: 1.6rem;
+
+.header{
+    padding: $header-padding;
+    background-color: $color-primary;
+    height: 200px;
+    display: flex;
+    color: white;
+    font-size: $font-size-h1;
+    font-family: $font-alternative;
+
+    .logo{
+        font-size: $header-logo-size;
+    }
+
+    nav{
+        ul{
+            display: flex;
+        }
+        
+        li{
+            margin-left:10px;
+        }
+    }
+}
