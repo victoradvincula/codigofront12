@@ -1,0 +1,28 @@
+@import "../style/reset";
+
+/* VARIABLES */
+
+/* FONTS */
+
+$font-sizes:(
+   base: 62.5%,
+   body: 1.4rem,
+   p: 1.6rem,
+   h1:2.4rem,
+   h2: 2rem,  
+);
+
+$font-familiy:(
+    global: arial,
+    title: helvetica,
+);
+
+/* GLOBALES */
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: map-get($font-sizes,base);
+}
