@@ -9,7 +9,7 @@ Algoritmo calculadora
 	Escribir "ingresa tu operacion"
 	Leer operacion
 	
-	Mientras operacion <> " " Hacer
+	Mientras operacion <> "" Hacer
 		
 		Escribir "Ingresa el primer valor"
 		Leer a
@@ -35,6 +35,7 @@ Algoritmo calculadora
 		Leer operacion
 	Fin Mientras
 	
+	Escribir "se cerro calculadora"
 	
 FinAlgoritmo
 
