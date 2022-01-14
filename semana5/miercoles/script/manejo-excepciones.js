@@ -1,16 +1,16 @@
-// function uno(){
-//     function suma(a,b){
-//         if (arguments.length>2) {
-//             throw console.error("No soporta la suma de mas de 2 argumentos")
-//         }
-//         return a + b;
-//     }
+function uno(){
+    function suma(a,b){
+        if (arguments.length>2) {
+            throw console.error("No soporta la suma de mas de 2 argumentos")
+        }
+        return a + b;
+    }
 
-//     console.log(suma(2,3));
-//     console.log(suma(2,3,4,5,6));
-// }
+    console.log(suma(2,3));
+    console.log(suma(2,3,4,5,6));
+}
 
-// uno();
+uno();
 
 //try catch
 //control de flujo
