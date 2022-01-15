@@ -230,10 +230,7 @@ console.log("mismoPais", mismoPais);
 // every
 const noSonDelMismoPais = mascotas.some((mascota) => mascota.pais == "peru");
 console.log("noSonDelMismoPais", noSonDelMismoPais);
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
+
 
 
 
