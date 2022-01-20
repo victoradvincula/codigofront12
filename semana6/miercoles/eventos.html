@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            height: 200vh;
+        }
+
+        body{
+            height: 200vh;
+        }
+    </style>
+
+</head>
+<body>
+    <input type="text">
+
+    <select name="" id="">
+        <option value="">Selecciona</option>
+        <option value="1">Valor uno</option>
+    </select>
+
+    <input type="checkbox" value="checkOne">
+<script>
+    window.onresize = function(){
+        console.log(this.innerWidth);
+        console.log(this.innerHeight);
+    }
+
+    window.onscroll = function() {
+        console.log("distancia",this.scrollY)
+    }
+
+    document.querySelector("body").onmousemove = function(event) {
+        console.log("distancia", event.clientX);
+        console.log("distancia", event.clientY);
+        this.style.backgroundColor = `rgb(${event.clientX}, ${event.clientY}, ${event.clientX})`
+    }
+    window.onload = function () {
+            alert("ya cargo toda la pagina")
+        }
+
+
+        const input = document.querySelector("input[type='text']")
+        input.oninput = function (e) {
+            console.log(this.value)
+        }
+
+        input.onkeyup = function (e) {
+            console.log('onkeyup', this.value)
+        }
+
+        input.onkeypress = function (e) {
+            console.log('onkeypress', this.value)
+        }
+
+        input.onfocus = function (e) {
+            console.log('onfocus', this.value)
+        }
+
+        const select = document.querySelector('select')
+        select.onchange = function () {
+            console.log(this.value)
+        }
+
+        const inputCheck = document.querySelector("input[type='checkbox']")
+
+        inputCheck.onchange = function () {
+            console.log('onchange', this.value)
+            console.log('onchange', this.checked)
+        }
+
+</script>
+
+</body>
+</html>
