@@ -15,8 +15,8 @@
   a {
     font-weight: bold;
     font-size: 1.6rem;
-
-    &:hover {
+    &:hover,
+    &.selected {
       background-color: map-get($colors, "primary");
       color: map-get($colors, "secondary");
     }

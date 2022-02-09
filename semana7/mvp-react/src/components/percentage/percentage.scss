@@ -1,0 +1,19 @@
+.percentage{
+    label{
+        font-size:2rem;
+        font-weight:bold;
+        display:block;
+        margin-bottom:10px;
+    }
+    &__bar{
+        color:white;
+        font-weight: bold;
+        background-color:blue;
+        border-radius: 10px;
+        div{
+            background-color:green;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+}

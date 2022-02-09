@@ -1,6 +1,6 @@
 import "../nav/nav.scss"
 import {
-  Link
+  NavLink
 } from "react-router-dom";
 
 export const Nav = () => {
@@ -8,16 +8,16 @@ export const Nav = () => {
       <nav className="nav">
         <ul>
           <li>
-            <Link to="/nosotros">Nosotros</Link>
+            <NavLink to="/nosotros" activeClassName="selected">Nosotros</NavLink>
           </li>
           <li>
-          <Link to="/portafolio">Portafolio</Link>
+          <NavLink to="/portafolio" activeClassName="selected">Portafolio</NavLink>
           </li>
           <li>
-          <Link to="/experiencia">Experiencia</Link>
+          <NavLink to="/experiencia" activeClassName="selected">Experiencia</NavLink>
           </li>
           <li>
-          <Link to="/contacto">Contacto</Link>
+          <NavLink to="/contacto" activeClassName="selected">Contacto</NavLink>
           </li>
         </ul>
       </nav>
