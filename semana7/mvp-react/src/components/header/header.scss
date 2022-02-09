@@ -1,0 +1,16 @@
+@import "../../assets/style/variables";
+
+.header {
+    background-color: map-get($colors, "complementary" );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+
+
+    &__logo{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

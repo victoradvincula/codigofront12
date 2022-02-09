@@ -1,0 +1,27 @@
+@import "./reset";
+@import "./variables";
+/*GLOBALES*/
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family:arial,sans-serif;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+
+    main{
+        flex-grow: 1;
+    }
+}

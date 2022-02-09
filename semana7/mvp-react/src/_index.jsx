@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./assets/style/main.css"
 
-function App(props) {
+function App1(props) {
   console.log(typeof props.name);
   //props.name es un string se puede utilizar todos sus metodos
   return <h1>Hola {props.name.toUpperCase()} </h1>;
@@ -83,7 +83,7 @@ const Card = (props) => {
   );
 };
 
-const App1 = () => {
+const App = () => {
   return (
     <div className="wrapper">
       <header>
@@ -113,7 +113,7 @@ const Header = () =>{
 };
 
 ReactDOM.render(
-  <App1 />,
+  <App />,
 document.getElementById("root")
 );
 

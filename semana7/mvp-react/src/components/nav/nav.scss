@@ -1,0 +1,24 @@
+@import "../../assets/style/variables";
+
+.nav {
+  ul {
+    display: flex;
+  }
+  li {
+    margin-left: 10px;
+    padding: 20px;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+  a {
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    &:hover {
+      background-color: map-get($colors, "primary");
+      color: map-get($colors, "secondary");
+    }
+  }
+}
