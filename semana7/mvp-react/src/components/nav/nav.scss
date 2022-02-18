@@ -19,6 +19,7 @@
     &.selected {
       background-color: map-get($colors, "primary");
       color: map-get($colors, "secondary");
+      border-radius: 5px;
     }
   }
 }
